@@ -1,0 +1,64 @@
+/* Reset default margin, padding, and box-sizing */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Styling for the container holding the calculator */
+.container{
+    background: #e3f9ff; /* Light blue background color */
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full viewport width */
+    display: flex; /* Flex container */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+/* Styling for the calculator itself */
+.calculator {
+    background: #3a4452; /* Dark blue background color */
+    padding: 20px; /* Padding around the calculator */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Styling for buttons within the calculator */
+.calculator form input {
+    outline: 0; /* Remove outline */
+    border: 0; /* Remove border */
+    width: 60px; /* Button width */
+    height: 60px; /* Button height */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2); /* Box shadow */
+    font-size: 20px; /* Font size */
+    background: transparent; /* Transparent background */
+    color: white; /* Text color */
+    cursor: pointer; /* Pointer cursor */
+    margin: 10px; /* Margin around buttons */
+}
+
+/* Styling for the display area of the calculator */
+form .display{
+    display: flex; /* Flex container */
+    justify-content: flex-end; /* Align content to the right */
+    margin: 20px 0; /* Margin above and below the display */
+}
+
+/* Styling for the display input */
+form .display input {
+    text-align: right; /* Text alignment to the right */
+    flex: 1; /* Allow the display to grow */
+    font-size: 45px; /* Font size */
+    box-shadow: none; /* Remove box shadow */
+}
+
+/* Styling for the equal button */
+form input.equal {
+    width: 145px; /* Button width */
+}
+
+/* Styling for operator buttons */
+form input.operator {
+    color: #33ffd8; /* Operator button color */
+}
